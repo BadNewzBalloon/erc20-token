@@ -1,0 +1,38 @@
+{
+  "name": "erc20-token",
+  "version": "1.0.0",
+  "description": "Standard ERC-20 token contract implementation",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.js",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "deploy:base-sepolia": "hardhat run scripts/deploy.js --network baseSepolia",
+    "deploy:base": "hardhat run scripts/deploy.js --network baseMainnet",
+    "transfer-ownership": "hardhat run scripts/transferOwnership.js",
+    "verify": "hardhat verify"
+  },
+  "keywords": [
+    "erc20",
+    "ethereum",
+    "token",
+    "solidity",
+    "hardhat"
+  ],
+  "author": "BadNewzBalloon",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.0",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.5",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "ethers": "^6.7.1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3",
+    "dotenv": "^16.3.1"
+  }
+}
